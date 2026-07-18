@@ -30,7 +30,36 @@ Designed and deployed a multi-tenant relational cloud aviation database applicat
 ### Architecture & SaaS Principles
 1. **Multi-Tenancy & Data Isolation:** Utilizes customized built-in permission profiles (Admin, Airline Staff, Passenger) to dynamically partition user interfaces based on role identities, ensuring secure cross-tenant isolation within a singular shared application instance container.
 2. **Relational Cloud Database Architecture:** Decoupled data collection forms function natively as back-end cloud relational database tables. Multi-layered Lookup controls establish structural foreign key mappings across the Airlines, Flights, Passengers, and Reservations collections to enforce relational entity integrity.
-3. **Zero-Install Elastic Infrastructure:** The platform operates strictly on Zoho's fully managed remote cloud infrastructure, delivering instant cross-platform accessibility with automated resource scaling.
+## 🏢 Project 03: Property Buying & Rental SaaS (Chennai Property SaaS)
+
+### 🎯 Objective
+Designed and deployed a multi-tenant cloud-based property management system for Chennai local database tracking (Adyar, Anna Nagar, etc.) using structural lookups, automated no-code form rules, and role-isolated data containers.
+
+### 🛠️ Cloud Database Architecture & Schemas
+* **Owners Master:** Auto-generated `OwnerID` primary key, contact channels, and encrypted `KYCDOC` storage.
+* **Properties Registry:** Relational mapping linking property assets directly to owners via form lookups. Implements structural rules to dynamically require financial arrays based on listing attributes (Sale vs. Rental).
+* **Clients & Inquiries:** Dynamic multi-select tracking matching buyer/tenant budget ranges and location matrices against active inventory listings.
+* **Deals Ledger:** Final operational layer securing transactional records (Sale/Rental) with contextual field display constraints.
+
+### 🔒 SaaS Multi-Tenancy & Data Partitioning
+* **Role-Based Configuration:** Implements explicit authorization boundaries separating Admin, Agent, Owner, and Client profiles.
+* **Data Isolation Layers:** Embeds record-level runtime filters (`Owner == Logged-in User` and `Client == Logged-in User`) ensuring strict multi-tenant privacy inside a unified system runtime instance.
+
+### 📸 Project Artifacts
+* **Admin Analytics Command Hub:**
+  ![Admin Dashboard](chennai_property_dashboard.png)
+
+---
+
+## ✈️ Project 02: Flight Ticket Reservation System
+
+### 🎯 Objective
+Designed and deployed a multi-tenant cloud aviation database application featuring structural form lookups, conditional data reporting views, and role-based configuration layers.
+
+### 📸 Project Artifacts
+* **Operations Command Hub:**
+  ![Flight Reservation Dashboard](flight_reservation_dashboard.png)
+4. **Zero-Install Elastic Infrastructure:** The platform operates strictly on Zoho's fully managed remote cloud infrastructure, delivering instant cross-platform accessibility with automated resource scaling.
 
 ### Project Artifacts
 * **Live System Screenshot:** `flight_reservation_dashboard.png`
